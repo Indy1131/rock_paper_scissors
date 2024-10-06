@@ -8,33 +8,45 @@
 
     <link rel="stylesheet" href="./styles.css">
 
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <div class="main">
-        <h1>Rock, Paper, Scissors!</h1>
+        <div class="main-container">
+            <h1 id="mainHeader">Rock, Paper, Scissors!</h1>
+        </div>
         <div class="container">
             <div class="header-container">
-                <h1>Opponent:</h1>
-                <h1>O O O </h1>
+                <h1>Computer:</h1>
+                <div id="opponentScore" class="score-container">
+                    <div class="score-marker"></div>
+                    <div class="score-marker"></div>
+                    <div class="score-marker"></div>
+                </div>
             </div>
             <div class="opponent-container">
-                <div>?</div>
+                <div>
+                    <h1 id="opponentHeader">?</h1>
+                </div>
             </div>
             <div class="line"></div>
             <div class="header-container">
                 <h1>You:</h1>
-                <h1>O O O</h1>
+                <div id="playerScore" class="score-container">
+                    <div class="score-marker"></div>
+                    <div class="score-marker"></div>
+                    <div class="score-marker"></div>
+                </div>
             </div>
             <div class="button-container">
                 <button>Rock</button>
                 <button>Paper</button>
                 <button>Scissors</button>
             </div>
-            <button class="go">Go</button>
+            <button class="go button-interact">Shoot</button>
             <div class="line"></div>
-            <h1 style="margin-left: 15px;">Round 1 of 5</h1>
+            <h1 id="roundHeader" style="margin-left: 15px;">Round 1 of 5</h1>
         </div>
     </div>
 </body>
